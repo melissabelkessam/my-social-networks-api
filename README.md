@@ -1,4 +1,8 @@
-# My Social Networks API
+
+## 👨‍💻 Auteur
+
+Melissa Belkessam - Master Data Engineering  EFREI 
+```# My Social Networks API
 
 API REST pour un réseau social avec gestion d'événements, groupes, discussions, albums photo, sondages et billetterie.
 
@@ -88,8 +92,4 @@ my-social-networks-api/
 - ✅ Shopping list (BONUS)
 - ✅ Covoiturage (BONUS)
 
-## 👨‍💻 Auteur
-
-Melissa Belkessam - Master Data Analytics
-```
 
