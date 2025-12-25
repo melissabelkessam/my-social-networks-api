@@ -43,40 +43,39 @@ Consulter le fichier `API_DOCUMENTATION.md` pour la liste complète des endpoint
 - Node.js
 - Express.js
 - MySQL
+- express-validator (validation des données)
 - dotenv
 - cors
+## 🔒 Validation des données
+
+L'API utilise **express-validator** pour sécuriser les schémas d'entrée des données.
+
+Toutes les requêtes sont validées avant traitement :
+- ✅ Champs obligatoires
+- ✅ Formats (email, URL, dates)
+- ✅ Types de données
+- ✅ Longueurs maximales
+- ✅ Contraintes métier
+
+Les validators se trouvent dans `src/validators/`
 
 ## 📦 Structure du projet
 ```
 my-social-networks-api/
 ├── src/
 │   ├── config/
-│   │   └── database.js
-│   ├── controllers/
-│   │   ├── users.controller.js
-│   │   ├── groups.controller.js
-│   │   ├── events.controller.js
-│   │   ├── discussions.controller.js
-│   │   ├── albums.controller.js
-│   │   ├── polls.controller.js
-│   │   ├── tickets.controller.js
-│   │   ├── shopping.controller.js
-│   │   └── carpools.controller.js
-│   ├── routes/
-│   │   ├── users.routes.js
-│   │   ├── groups.routes.js
-│   │   ├── events.routes.js
-│   │   ├── discussions.routes.js
-│   │   ├── albums.routes.js
-│   │   ├── polls.routes.js
-│   │   ├── tickets.routes.js
-│   │   ├── shopping.routes.js
-│   │   └── carpools.routes.js
+│   │   └── database.js          # Configuration MySQL
+│   ├── controllers/             # Logique métier (9 controllers)
+│   ├── routes/                  # Définition des endpoints (9 routes)
+│   ├── validators/              # Validation des données (9 validators)
 │   └── server.js
-├── .env
+├── social_networks_db.sql       # Export de la base avec données de test
+├── .env                         # Variables d'environnement
+├── .env.example                 # Exemple de configuration
 ├── .gitignore
 ├── package.json
-├── API_DOCUMENTATION.md
+├── API_DOCUMENTATION.md         # Documentation complète de l'API
+├── INSTALLATION.md              # Instructions d'installation détaillées
 └── README.md
 ```
 
