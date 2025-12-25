@@ -38,14 +38,14 @@ DB_PASSWORD=
 DB_NAME=social_networks_db
 ```
 
-### 5. Démarrer le serveur
+### 5. Démarrer  the serveur 
 ```bash
 node src/server.js
 ```
 
 ## Données de test
 
-La base de données contient déjà :
+La base de données contient déjà: 
 - 5 utilisateurs
 - 2 groupes avec membres
 - 2 événements avec participants
